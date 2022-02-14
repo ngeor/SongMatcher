@@ -13,7 +13,7 @@ namespace SongMatcher.Tests
             {
                 "/home/ngeor/iTunes/Artist/Album/Track.mp3".NormalizePath()
             };
-            var result = f.Find("/home/ngeor/iTunes/".NormalizePath(), filenames, "Artist - Track");
+            var result = f.Find("/home/neor/iTunes/".NormalizePath(), filenames, "Artist - Track");
             CollectionAssert.AreEqual(filenames, result);
         }
 
