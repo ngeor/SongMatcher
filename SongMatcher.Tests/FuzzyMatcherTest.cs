@@ -14,6 +14,7 @@ namespace SongMatcher.Tests
                 "/home/ngeor/iTunes/Artist/Album/Track.mp3".NormalizePath()
             };
             var result = f.Find("/home/ngeor/iTunes/".NormalizePath(), filenames, "Artist - Track");
+            System.Console.WriteLine(filenames);
             CollectionAssert.AreEqual(filenames, result);
         }
 
